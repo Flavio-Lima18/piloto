@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block titulo %} Titulo do template {% endblock %}</title>
+</head>
+<body>
+    <a href="{% url 'index' %}">Home</a> |
+    <a href="{% url 'sobre' %}">Sobre</a> |
+    <a href="{% url 'entrar_em_contato' %}">Contato</a>
+
+    {% block conteudo %}
+        Conteudo do template
+    {% endblock %}
+</body>
+</html>
