@@ -1,27 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início</title>
-    <style>
-        .header {
-            padding-right: 10px;
-        }
-        .h1 {
-            font-weight: bold;
-            font-size: 24px;
-        }
-    </style>
-</head>
-<body>
-    <header class="header">
-        <nav>
-            <a href="{% url 'index' %}">Início</a> |
-            <a href="{% url 'sobre' %}">Sobre</a> |
-            <a href="{% url 'entrar_em_contato' %}">Contato</a>  <!-- Corrigido -->
-        </nav>
-    </header>
-    <h1 class="h1">Página Principal</h1>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block titulo %} Home {% endblock %}
+
+{% block conteudo %}
+    <h1>Bem-vindo ao nosso Sistema Web!!</h1>
+{% endblock %}
