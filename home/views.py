@@ -28,3 +28,6 @@ def dia_da_semana(request, numero):
     }
     dia = dias.get(numero, "Dia inválido")
     return render(request, "dia_da_semana.html", {'numero': numero, 'dia': dia})
+
+def dashboard(request):
+    return render(request, 'dashboard.html')
